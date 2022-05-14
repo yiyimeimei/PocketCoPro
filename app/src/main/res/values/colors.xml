@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#FF5722</color>
+    <color name="primary_dark">#E64A19</color>
+    <color name="primary_light">#FFCCBC</color>
+    <color name="accent">#03A9F4</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="background">@android:color/white</color>
+
+    <color name="black">@android:color/black</color>
+    <color name="white">@android:color/white</color>
+
+    <color name="progress_red">@android:color/holo_red_light</color>
+    <color name="progress_blue">@android:color/holo_blue_bright</color>
+    <color name="progress_green">@android:color/holo_green_dark</color>
+
+    <color name="purple">#673AB7</color>
+    <color name="pink">#E91E63</color>
+    <color name="yellow">#FFC107</color>
+    <color name="green">#4CAF50</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="blur">#DDFFFFFF</color>
+
+    <color name="radarGridColor">#CCC</color>
+    <color name="radarLineColor">#CCC</color>
+    <color name="circleColor">#CCC</color>
+    <color name="layerColor">#CCC</color>
+    <color name="radarTextColor">#CCC</color>
+</resources>

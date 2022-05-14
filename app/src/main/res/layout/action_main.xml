@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="visibility"
+            type="Integer" />
+
+    </data>
+
+    <merge>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/middle">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/explore"
+                android:layout_alignParentEnd="true"
+                android:animateLayoutChanges="true">
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/middle"
+                    android:background="@color/black"
+                    android:paddingStart="@dimen/middle"
+                    android:paddingEnd="@dimen/middle"
+                    android:text="@string/search"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/white"
+                    android:visibility="@{visibility}"
+                    app:layout_constraintBottom_toBottomOf="@id/search"
+                    app:layout_constraintEnd_toStartOf="@id/search"
+                    app:layout_constraintTop_toTopOf="@id/search" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/middle"
+                    android:contentDescription="@string/search"
+                    android:src="@drawable/search"
+                    app:backgroundTint="@color/green"
+                    app:fabSize="mini"
+                    app:layout_constraintBottom_toTopOf="@id/detect"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/middle"
+                    android:background="@color/black"
+                    android:paddingStart="@dimen/middle"
+                    android:paddingEnd="@dimen/middle"
+                    android:text="@string/detect"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/white"
+                    android:visibility="@{visibility}"
+                    app:layout_constraintBottom_toBottomOf="@id/detect"
+                    app:layout_constraintEnd_toStartOf="@id/detect"
+                    app:layout_constraintTop_toTopOf="@id/detect" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/detect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/middle"
+                    android:contentDescription="@string/detect"
+                    android:src="@drawable/detect"
+                    app:backgroundTint="@color/pink"
+                    app:fabSize="mini"
+                    app:layout_constraintBottom_toTopOf="@id/filter"
+                    app:layout_constraintEnd_toEndOf="parent" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/middle"
+                    android:background="@color/black"
+                    android:paddingStart="@dimen/middle"
+                    android:paddingEnd="@dimen/middle"
+                    android:text="@string/scan"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/white"
+                    android:visibility="@{visibility}"
+                    app:layout_constraintBottom_toBottomOf="@id/filter"
+                    app:layout_constraintEnd_toStartOf="@id/filter"
+                    app:layout_constraintTop_toTopOf="@id/filter" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/middle"
+                    android:contentDescription="@string/scan"
+                    android:src="@drawable/scan"
+                    app:backgroundTint="@color/yellow"
+                    app:fabSize="mini"
+                    app:layout_constraintBottom_toTopOf="@id/nearby"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/middle"
+                    android:background="@color/black"
+                    android:paddingStart="@dimen/middle"
+                    android:paddingEnd="@dimen/middle"
+                    android:text="@string/nearby"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/white"
+                    android:visibility="@{visibility}"
+                    app:layout_constraintBottom_toBottomOf="@id/nearby"
+                    app:layout_constraintEnd_toStartOf="@id/nearby"
+                    app:layout_constraintTop_toTopOf="@id/nearby" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/nearby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/middle"
+                    android:contentDescription="@string/nearby"
+                    android:src="@drawable/nearby"
+                    app:backgroundTint="@color/purple"
+                    app:fabSize="mini"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/explore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom|end"
+                android:text="@string/explore"
+                app:icon="@drawable/explore" />
+
+        </RelativeLayout>
+
+    </merge>
+
+</layout>

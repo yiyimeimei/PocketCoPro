@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="actionContent"
+            type="com.memoryleak.pocketcopro.data.Order.Action" />
+
+    </data>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/action"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{actionContent.userName}"
+        android:textColor="@color/accent" />
+
+</layout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/fragment_commodity"
+            android:icon="@drawable/explore"
+            android:title="@string/explore" />
+
+        <item
+            android:id="@+id/fragment_order"
+            android:icon="@drawable/order"
+            android:title="@string/order" />
+
+    </group>
+
+    <group>
+
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/setting"
+            android:title="@string/setting" />
+
+        <item
+            android:id="@+id/fragment_user"
+            android:icon="@drawable/user"
+            android:title="@string/user" />
+
+    </group>
+
+</menu>

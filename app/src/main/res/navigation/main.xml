@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/fragment_commodity">
+
+    <action
+        android:id="@+id/action_nearby"
+        app:destination="@+id/fragment_nearby" />
+
+    <action
+        android:id="@+id/action_place_order"
+        app:destination="@id/fragment_order_detail"
+        app:popUpTo="@id/fragment_commodity"
+        app:popUpToInclusive="false" />
+
+    <fragment
+        android:id="@+id/fragment_commodity"
+        android:name="com.memoryleak.pocketcopro.fragment.CommodityFragment"
+        android:label="@string/explore"
+        tools:layout="@layout/fragment_commodity">
+
+        <action
+            android:id="@+id/action_commodity_detail"
+            app:destination="@id/fragment_commodity_detail" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_commodity_detail"
+        android:name="com.memoryleak.pocketcopro.fragment.CommodityDetailFragment"
+        android:label="@string/detail"
+        tools:layout="@layout/fragment_commodity_detail" />
+
+    <fragment
+        android:id="@+id/fragment_order"
+        android:name="com.memoryleak.pocketcopro.fragment.OrderFragment"
+        android:label="@string/order"
+        tools:layout="@layout/fragment_order">
+
+        <action
+            android:id="@+id/action_order_detail"
+            app:destination="@id/fragment_order_detail" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_order_detail"
+        android:name="com.memoryleak.pocketcopro.fragment.OrderDetailFragment"
+        android:label="@string/detail"
+        tools:layout="@layout/fragment_order_detail" />
+
+    <fragment
+        android:id="@+id/fragment_user"
+        android:name="com.memoryleak.pocketcopro.fragment.UserFragment"
+        android:label="@string/user"
+        tools:layout="@layout/fragment_user" />
+
+    <fragment
+        android:id="@+id/fragment_nearby"
+        android:name="com.memoryleak.pocketcopro.fragment.NearbyFragment"
+        android:label="@string/nearby" />
+
+</navigation>

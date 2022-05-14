@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="device_name">
+        <item>device1</item>
+        <item>device2</item>
+        <item>device3</item>
+        <item>device4</item>
+    </string-array>
+</resources>
